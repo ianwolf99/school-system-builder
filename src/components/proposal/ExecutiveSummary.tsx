@@ -11,7 +11,7 @@ const ExecutiveSummary = () => {
           AKILIMATIC AI SOLUTIONS COMPANY LIMITED proposes to build a comprehensive, cloud-based{" "}
           <strong>School Management System (SMS)</strong> — a multi-tenant SaaS platform 
           enabling educational institutions across Kenya to digitize their entire 
-          operations with cutting-edge AI-powered technology.
+          operations with cutting-edge technology.
         </p>
 
         <div className="grid grid-cols-2 gap-8 my-10">
@@ -42,7 +42,7 @@ const ExecutiveSummary = () => {
             { icon: "📱", title: "M-Pesa Native", desc: "Built-in M-Pesa integration for seamless fee collection" },
             { icon: "👥", title: "Multi-Portal Access", desc: "Dedicated portals for Admin, Teachers, Parents, Students" },
             { icon: "🔒", title: "Enterprise Security", desc: "Bank-grade security with AES-256 encryption" },
-            { icon: "⚡", title: "AI-Powered", desc: "Rapid 4-6 week delivery with AI development" },
+            { icon: "⚡", title: "Rapid Delivery", desc: "4-6 week delivery by experienced team" },
             { icon: "📈", title: "Scalable SaaS", desc: "From single school to nationwide networks" },
           ].map((item, idx) => (
             <div key={idx} className="text-center p-4">
@@ -79,8 +79,8 @@ const ExecutiveSummary = () => {
         <div className="bg-gradient-to-r from-[hsl(213,50%,20%)] to-[hsl(213,50%,30%)] rounded-xl p-8 text-white mt-10">
           <h4 className="text-xl font-bold mb-2">⚡ Rapid Project Timeline</h4>
           <p className="opacity-90 mb-4">
-            Complete implementation in <strong>4-6 weeks</strong> with our AI-accelerated development 
-            methodology, allowing early modules to go live while development continues.
+            Complete implementation in <strong>4-6 weeks</strong> with our experienced development 
+            team, allowing early modules to go live while development continues.
           </p>
           <div className="flex gap-4 flex-wrap">
             {["Week 1: Foundation", "Week 2: Academics", "Week 3: Exams", "Week 4: Finance", "Week 5: Portals", "Week 6: Launch"].map((phase) => (

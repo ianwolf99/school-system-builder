@@ -28,13 +28,13 @@ const ContactSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-3xl mb-3">📧</div>
             <h4 className="text-white font-bold mb-1">Email Us</h4>
-            <p className="text-[hsl(173,60%,55%)]">info@akilimatic.com</p>
+            <p className="text-[hsl(173,60%,55%)]">sales@akilimatic.com</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-3xl mb-3">📞</div>
             <h4 className="text-white font-bold mb-1">Call Us</h4>
-            <p className="text-[hsl(173,60%,55%)]">+254 XXX XXX XXX</p>
+            <p className="text-[hsl(173,60%,55%)]">+254 722 736 871</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -46,7 +46,7 @@ const ContactSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-3xl mb-3">📍</div>
             <h4 className="text-white font-bold mb-1">Location</h4>
-            <p className="text-[hsl(173,60%,55%)]">Mombasa, Kenya</p>
+            <p className="text-[hsl(173,60%,55%)]">Kenya</p>
           </div>
         </div>
 
