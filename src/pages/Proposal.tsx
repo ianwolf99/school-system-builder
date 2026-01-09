@@ -7,12 +7,12 @@ import { Download, Eye, Loader2 } from "lucide-react";
 import CoverPage from "@/components/proposal/CoverPage";
 import TableOfContents from "@/components/proposal/TableOfContents";
 import ExecutiveSummary from "@/components/proposal/ExecutiveSummary";
-import UserFlowsSection from "@/components/proposal/UserFlowsSection";
+import { UserFlowsPage1, UserFlowsPage2 } from "@/components/proposal/UserFlowsSection";
 import { ModulesPage1, ModulesPage2, ModulesPage3 } from "@/components/proposal/ModulesSection";
 import PaymentSection from "@/components/proposal/PaymentSection";
-import TechArchitectureSection from "@/components/proposal/TechArchitectureSection";
+import { TechArchitecturePage1, TechArchitecturePage2 } from "@/components/proposal/TechArchitectureSection";
 import MethodologySection from "@/components/proposal/MethodologySection";
-import TimelineSection from "@/components/proposal/TimelineSection";
+import { TimelinePage1, TimelinePage2 } from "@/components/proposal/TimelineSection";
 import WhyUsSection from "@/components/proposal/WhyUsSection";
 import ContactSection from "@/components/proposal/ContactSection";
 
@@ -148,7 +148,11 @@ const Proposal = () => {
           </div>
 
           <div className="pdf-page" style={pageStyle}>
-            <UserFlowsSection />
+            <UserFlowsPage1 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <UserFlowsPage2 />
           </div>
 
           <div className="pdf-page" style={pageStyle}>
@@ -168,7 +172,11 @@ const Proposal = () => {
           </div>
 
           <div className="pdf-page" style={pageStyle}>
-            <TechArchitectureSection />
+            <TechArchitecturePage1 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <TechArchitecturePage2 />
           </div>
 
           <div className="pdf-page" style={pageStyle}>
@@ -176,7 +184,11 @@ const Proposal = () => {
           </div>
 
           <div className="pdf-page" style={pageStyle}>
-            <TimelineSection />
+            <TimelinePage1 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <TimelinePage2 />
           </div>
 
           <div className="pdf-page" style={pageStyle}>

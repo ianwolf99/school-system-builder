@@ -194,48 +194,40 @@ const studentFlow = {
   ],
 };
 
-const UserFlowsSection = () => {
+export const UserFlowsPage1 = () => {
   return (
     <div className="bg-white min-h-[297mm] p-16">
-      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">
-        User Portal Flow Diagrams
-      </h2>
+      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">User Portal Flow Diagrams</h2>
       <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
       <p className="text-[hsl(213,20%,45%)] mb-8">
         Complete user journey maps for each portal, showing navigation structure and key actions.
       </p>
 
-      <UserFlowDiagram
-        title="School Admin Portal"
-        icon="👔"
-        color="hsl(213,50%,20%)"
-        flow={adminFlow}
-      />
+      <UserFlowDiagram title="School Admin Portal" icon="👔" color="hsl(213,50%,20%)" flow={adminFlow} />
+      <UserFlowDiagram title="Teacher Portal" icon="👨‍🏫" color="hsl(173,60%,40%)" flow={teacherFlow} />
 
-      <UserFlowDiagram
-        title="Teacher Portal"
-        icon="👨‍🏫"
-        color="hsl(173,60%,40%)"
-        flow={teacherFlow}
-      />
-
-      <div className="page-break" />
-
-      <UserFlowDiagram
-        title="Parent Portal"
-        icon="👨‍👩‍👧"
-        color="hsl(280,60%,50%)"
-        flow={parentFlow}
-      />
-
-      <UserFlowDiagram
-        title="Student Portal"
-        icon="🎓"
-        color="hsl(340,70%,50%)"
-        flow={studentFlow}
-      />
+      <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-8">Page 1 of 2</p>
     </div>
   );
 };
 
+export const UserFlowsPage2 = () => {
+  return (
+    <div className="bg-white min-h-[297mm] p-16">
+      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">User Portal Flow Diagrams (Continued)</h2>
+      <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
+      <p className="text-[hsl(213,20%,45%)] mb-8">
+        Additional portals showing parent and student journeys.
+      </p>
+
+      <UserFlowDiagram title="Parent Portal" icon="👨‍👩‍👧" color="hsl(280,60%,50%)" flow={parentFlow} />
+      <UserFlowDiagram title="Student Portal" icon="🎓" color="hsl(340,70%,50%)" flow={studentFlow} />
+
+      <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-8">Page 2 of 2</p>
+    </div>
+  );
+};
+
+// Default export kept for compatibility
+const UserFlowsSection = UserFlowsPage1;
 export default UserFlowsSection;
