@@ -8,10 +8,10 @@ const ExecutiveSummary = () => {
 
       <div className="prose prose-lg max-w-none">
         <p className="text-lg text-[hsl(213,20%,35%)] leading-relaxed mb-6">
-          AKILIMATIC AI SOLUTIONS proposes to build a comprehensive, cloud-based{" "}
+          AKILIMATIC AI SOLUTIONS COMPANY LIMITED proposes to build a comprehensive, cloud-based{" "}
           <strong>School Management System (SMS)</strong> — a multi-tenant SaaS platform 
-          enabling educational institutions across Africa to digitize their entire 
-          operations with cutting-edge technology.
+          enabling educational institutions across Kenya to digitize their entire 
+          operations with cutting-edge AI-powered technology.
         </p>
 
         <div className="grid grid-cols-2 gap-8 my-10">
@@ -19,7 +19,7 @@ const ExecutiveSummary = () => {
             <h4 className="font-bold text-[hsl(213,50%,20%)] mb-2">🎯 Target Market</h4>
             <p className="text-[hsl(213,20%,40%)]">
               K-12 Schools, Secondary Schools, Colleges, and School Groups across 
-              Kenya, Tanzania, Uganda, and Rwanda.
+              Kenya - from single schools to nationwide networks.
             </p>
           </div>
 
@@ -39,10 +39,10 @@ const ExecutiveSummary = () => {
         <div className="grid grid-cols-3 gap-6 mb-10">
           {[
             { icon: "📊", title: "Complete Digitization", desc: "From admissions to alumni, every process automated" },
-            { icon: "💳", title: "Local Payments", desc: "Native M-Pesa, Card, and Bank Transfer integration" },
+            { icon: "📱", title: "M-Pesa Native", desc: "Built-in M-Pesa integration for seamless fee collection" },
             { icon: "👥", title: "Multi-Portal Access", desc: "Dedicated portals for Admin, Teachers, Parents, Students" },
             { icon: "🔒", title: "Enterprise Security", desc: "Role-based access control with data isolation" },
-            { icon: "📱", title: "Mobile Responsive", desc: "Full functionality on any device, anywhere" },
+            { icon: "⚡", title: "AI-Powered", desc: "Rapid 4-6 week delivery with AI development" },
             { icon: "📈", title: "Scalable SaaS", desc: "From single school to nationwide networks" },
           ].map((item, idx) => (
             <div key={idx} className="text-center p-4">
@@ -63,9 +63,9 @@ const ExecutiveSummary = () => {
             "Tailwind CSS",
             "Supabase (PostgreSQL)",
             "Edge Functions",
-            "Stripe Payments",
             "M-Pesa API",
             "Africa's Talking SMS",
+            "Cloud Hosting",
           ].map((tech) => (
             <span
               key={tech}
@@ -77,13 +77,13 @@ const ExecutiveSummary = () => {
         </div>
 
         <div className="bg-gradient-to-r from-[hsl(213,50%,20%)] to-[hsl(213,50%,30%)] rounded-xl p-8 text-white mt-10">
-          <h4 className="text-xl font-bold mb-2">Project Timeline</h4>
+          <h4 className="text-xl font-bold mb-2">⚡ Rapid Project Timeline</h4>
           <p className="opacity-90 mb-4">
-            Complete implementation in <strong>18-25 weeks</strong> with phased delivery, 
-            allowing early modules to go live while development continues.
+            Complete implementation in <strong>4-6 weeks</strong> with our AI-accelerated development 
+            methodology, allowing early modules to go live while development continues.
           </p>
           <div className="flex gap-4 flex-wrap">
-            {["Phase 1: Core (6 weeks)", "Phase 2: Finance (4 weeks)", "Phase 3: Portals (4 weeks)", "Phase 4-6: Full System (11 weeks)"].map((phase) => (
+            {["Week 1: Foundation", "Week 2: Academics", "Week 3: Exams", "Week 4: Finance", "Week 5: Portals", "Week 6: Launch"].map((phase) => (
               <span key={phase} className="px-3 py-1 bg-white/20 rounded text-sm">
                 {phase}
               </span>

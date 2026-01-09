@@ -41,12 +41,12 @@ const CoverPage = () => {
         {/* Subtitle */}
         <p className="text-xl text-white/80 max-w-2xl mx-auto mb-16 leading-relaxed">
           A comprehensive, cloud-based solution enabling educational institutions 
-          across Africa to digitize their entire operations with modern technology.
+          across Kenya to digitize their entire operations with modern AI-powered technology.
         </p>
 
         {/* Features Highlights */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
-          {["23 Modules", "6 User Portals", "M-Pesa Ready", "Multi-School SaaS"].map((item) => (
+          {["23+ Modules", "6 User Portals", "M-Pesa Ready", "4-6 Weeks Delivery", "Multi-School SaaS"].map((item) => (
             <span
               key={item}
               className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white text-sm"
@@ -57,10 +57,10 @@ const CoverPage = () => {
         </div>
 
         {/* Company Name */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 max-w-md mx-auto">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 max-w-lg mx-auto">
           <p className="text-[hsl(173,60%,55%)] text-sm font-medium mb-2">PREPARED BY</p>
           <p className="text-2xl font-bold text-white">AKILIMATIC AI SOLUTIONS</p>
-          <p className="text-white/60 text-sm mt-2">COMPANY</p>
+          <p className="text-white/80 text-lg mt-1">COMPANY LIMITED</p>
         </div>
       </div>
 

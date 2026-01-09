@@ -20,7 +20,7 @@ const ContactSection = () => {
         <h2 className="text-4xl font-bold text-white mb-4">Ready to Transform Your School?</h2>
         <p className="text-xl text-white/80 mb-12">
           Let's discuss how AKILIMATIC can build the perfect school management system for 
-          your institution.
+          your institution in just 4-6 weeks.
         </p>
 
         {/* Contact Cards */}
@@ -57,8 +57,9 @@ const ContactSection = () => {
             {[
               "Schedule a discovery call to discuss your requirements",
               "Receive a customized quotation based on your school size",
-              "Review demo of existing modules",
-              "Sign agreement and kick off development",
+              "Review live demo of the system",
+              "Sign agreement and kick off 4-6 week development",
+              "Go live and transform your school operations!",
             ].map((step, idx) => (
               <div key={idx} className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-[hsl(173,60%,45%)] text-white flex items-center justify-center font-bold text-sm">
@@ -73,7 +74,7 @@ const ContactSection = () => {
 
       {/* Footer */}
       <div className="absolute bottom-8 text-center text-white/40 text-sm">
-        <p>© 2025 AKILIMATIC AI SOLUTIONS COMPANY. All rights reserved.</p>
+        <p>© 2025 AKILIMATIC AI SOLUTIONS COMPANY LIMITED. All rights reserved.</p>
         <p className="mt-1">This proposal is confidential and intended solely for the recipient.</p>
       </div>
     </div>

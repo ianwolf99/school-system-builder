@@ -4,15 +4,21 @@ const WhyUsSection = () => {
   const reasons = [
     {
       icon: "🎯",
-      title: "Industry Expertise",
+      title: "Kenya-First Expertise",
       description:
-        "Deep understanding of African school management needs, built by experts who understand local challenges.",
+        "Deep understanding of Kenyan school management needs, built by experts who understand local challenges.",
     },
     {
       icon: "⚡",
-      title: "Rapid Development",
+      title: "AI-Powered Rapid Development",
       description:
-        "AI-powered development methodology for faster delivery without compromising quality.",
+        "4-6 week delivery using cutting-edge AI development methodology - faster than any competitor.",
+    },
+    {
+      icon: "📱",
+      title: "M-Pesa Native",
+      description:
+        "Built-in M-Pesa integration from day one. No third-party payment gateways - pure Kenyan payment.",
     },
     {
       icon: "🔒",
@@ -21,22 +27,16 @@ const WhyUsSection = () => {
         "Enterprise-grade security with role-based access control and complete data isolation.",
     },
     {
-      icon: "📱",
-      title: "Modern UX",
+      icon: "📊",
+      title: "Complete Solution",
       description:
-        "Clean, intuitive interface matching international standards while being locally relevant.",
+        "23+ modules covering every aspect of school operations - no need for multiple systems.",
     },
     {
-      icon: "🌍",
-      title: "Localization",
+      icon: "🚀",
+      title: "Scalable SaaS",
       description:
-        "Built specifically for Kenya, Tanzania, Uganda, and Rwanda contexts with local payment support.",
-    },
-    {
-      icon: "💳",
-      title: "Local Payments",
-      description:
-        "Native M-Pesa integration - not just card payments. Built for how Africa pays.",
+        "From single school to nationwide networks - the system grows with you.",
     },
   ];
 
@@ -72,21 +72,22 @@ const WhyUsSection = () => {
           />
           <div>
             <h3 className="text-2xl font-bold">AKILIMATIC AI SOLUTIONS</h3>
-            <p className="opacity-80">COMPANY</p>
+            <p className="opacity-80">COMPANY LIMITED</p>
           </div>
         </div>
 
         <p className="text-lg leading-relaxed opacity-90 mb-6">
-          AKILIMATIC AI SOLUTIONS is a technology company specializing in AI-powered software 
-          solutions for African businesses. We combine cutting-edge artificial intelligence 
-          with deep local market understanding to build systems that actually work for Africa.
+          AKILIMATIC AI SOLUTIONS COMPANY LIMITED is a Kenyan technology company specializing 
+          in AI-powered software solutions for African businesses. We combine cutting-edge 
+          artificial intelligence with deep local market understanding to build systems that 
+          actually work for Kenya.
         </p>
 
         <div className="grid grid-cols-3 gap-4">
           {[
-            { label: "Projects Delivered", value: "50+" },
-            { label: "Countries Served", value: "4" },
-            { label: "Client Satisfaction", value: "98%" },
+            { label: "Delivery Speed", value: "4-6 Weeks" },
+            { label: "Focus Market", value: "Kenya" },
+            { label: "Client Satisfaction", value: "100%" },
           ].map((stat) => (
             <div key={stat.label} className="text-center bg-white/10 rounded-xl p-4">
               <p className="text-3xl font-bold text-[hsl(173,60%,55%)]">{stat.value}</p>
