@@ -5,337 +5,234 @@ const modules = [
     number: 1,
     title: "Dashboard & Analytics",
     icon: "📊",
-    features: [
-      "Real-time KPIs - enrollment, revenue, attendance",
-      "Quick stats cards with daily summaries",
-      "Revenue trend charts (daily/weekly/monthly)",
-      "Comparative analytics across terms",
-      "Custom drag-and-drop widgets",
-      "Notification center with alerts",
-    ],
+    features: ["Real-time KPIs", "Revenue trends", "Custom widgets", "Notifications"],
   },
   {
     number: 2,
-    title: "Student Information System",
+    title: "Student Information",
     icon: "👨‍🎓",
-    features: [
-      "Online admission with document upload",
-      "Complete student profiles with photos",
-      "Guardian/parent information linking",
-      "Medical records & allergies",
-      "Class/section assignment",
-      "Student ID card generation with QR",
-      "Promotion & graduation workflows",
-    ],
+    features: ["Online admission", "Student profiles", "ID card generation", "Promotion workflows"],
   },
   {
     number: 3,
     title: "Guardian/Parent Management",
     icon: "👨‍👩‍👧",
-    features: [
-      "Parent profiles with occupation details",
-      "Multiple children linked to one account",
-      "Login credentials management",
-      "Communication preferences (SMS/Email)",
-      "Portal access control",
-      "Relationship type tracking",
-    ],
+    features: ["Parent profiles", "Multi-child linking", "Portal access", "Communication prefs"],
   },
   {
     number: 4,
-    title: "Staff & Human Resources",
+    title: "Staff & HR",
     icon: "👔",
-    features: [
-      "Employee profiles with qualifications",
-      "Department & designation assignment",
-      "Staff attendance (biometric ready)",
-      "Leave application & approval workflow",
-      "Payroll processing with tax calculations",
-      "Payslip PDF generation",
-      "Staff loans & EMI deductions",
-    ],
+    features: ["Employee profiles", "Attendance", "Leave management", "Payroll & payslips"],
   },
   {
     number: 5,
     title: "Academic Management",
     icon: "📚",
-    features: [
-      "Academic year & term configuration",
-      "Class levels and sections/streams",
-      "Subject allocation per class",
-      "Teacher-subject assignment",
-      "Syllabus upload & tracking",
-      "Timetable creation & publishing",
-      "Lesson plan submission & approval",
-    ],
+    features: ["Class & sections", "Subject allocation", "Timetables", "Lesson plans"],
   },
   {
     number: 6,
-    title: "Attendance Management",
+    title: "Attendance",
     icon: "✅",
-    features: [
-      "Daily attendance marking",
-      "Subject/period-wise attendance",
-      "Biometric/RFID integration ready",
-      "Late arrival tracking",
-      "Attendance percentage calculation",
-      "Automatic SMS on absence",
-      "Chronic absenteeism alerts",
-    ],
+    features: ["Daily marking", "Biometric ready", "Auto SMS alerts", "Reports"],
   },
   {
     number: 7,
-    title: "Examination & Assessment",
+    title: "Exams & Assessment",
     icon: "📝",
-    features: [
-      "Exam types setup (CAT, Mid-term, Final)",
-      "Grading system configuration",
-      "Teacher marks entry portal",
-      "Bulk marks upload via Excel",
-      "Automatic grade calculation",
-      "Class ranking & analysis",
-      "Customizable report cards",
-      "Transcript & certificate generation",
-    ],
+    features: ["Exam setup", "Marks entry", "Auto grading", "Report cards"],
   },
   {
     number: 8,
-    title: "Fee Management & Finance",
+    title: "Fee & Finance",
     icon: "💰",
-    features: [
-      "Fee heads & structure definition",
-      "Auto-invoice generation",
-      "M-Pesa integration (STK Push)",
-      "Card payments via Stripe",
-      "Bank transfer reconciliation",
-      "Partial payment support",
-      "Receipt generation (thermal/A4)",
-      "Financial reports & analytics",
-    ],
+    features: ["M-Pesa STK Push", "Auto invoicing", "Receipts", "Financial reports"],
   },
   {
     number: 9,
-    title: "Transport Management",
+    title: "Transport",
     icon: "🚌",
-    features: [
-      "Route definition with stops",
-      "Vehicle & driver profiles",
-      "Student-route allocation",
-      "Transport fee management",
-      "GPS tracking integration ready",
-      "Pick-up/drop-off notifications",
-    ],
+    features: ["Routes & stops", "Vehicle tracking", "Transport fees", "Notifications"],
   },
   {
     number: 10,
-    title: "Hostel/Boarding Management",
+    title: "Hostel/Boarding",
     icon: "🏠",
-    features: [
-      "Hostel & dormitory setup",
-      "Room allocation & capacity",
-      "Hostel fee management",
-      "Check-in/check-out logging",
-      "Hostel attendance tracking",
-      "Leave pass requests",
-    ],
+    features: ["Room allocation", "Hostel fees", "Check-in/out", "Leave passes"],
   },
   {
     number: 11,
-    title: "Library Management",
+    title: "Library",
     icon: "📖",
-    features: [
-      "Book cataloging with ISBN",
-      "Member registration",
-      "Book issue & return tracking",
-      "Fine calculation for late returns",
-      "Reservation system",
-      "Digital library (e-books, PDFs)",
-      "Barcode integration",
-    ],
+    features: ["Book catalog", "Issue & return", "Fine calculation", "Digital library"],
   },
   {
     number: 12,
-    title: "Clinic/Health Management",
+    title: "Health/Clinic",
     icon: "🏥",
-    features: [
-      "Student medical profiles",
-      "Vaccination records",
-      "Clinic visit logging",
-      "Medication tracking",
-      "Health incident reports",
-      "Emergency contact alerts",
-    ],
+    features: ["Medical records", "Vaccinations", "Clinic visits", "Emergency alerts"],
   },
   {
     number: 13,
     title: "Inventory & Assets",
     icon: "📦",
-    features: [
-      "Stock items cataloging",
-      "Stock receipt & issue",
-      "Minimum stock alerts",
-      "Fixed assets register",
-      "Asset assignment tracking",
-      "Depreciation calculation",
-      "Maintenance scheduling",
-    ],
+    features: ["Stock management", "Asset register", "Maintenance", "Depreciation"],
   },
   {
     number: 14,
-    title: "Communication Hub",
+    title: "Communication",
     icon: "📱",
-    features: [
-      "Bulk SMS messaging",
-      "Email notifications",
-      "Template-based messaging",
-      "School-wide announcements",
-      "Event calendar management",
-      "Push notifications",
-      "Parent RSVP for events",
-    ],
+    features: ["Bulk SMS", "Email", "Announcements", "Event calendar"],
   },
   {
     number: 15,
-    title: "Reception & Front Office",
+    title: "Front Office",
     icon: "🏢",
-    features: [
-      "Visitor registration & logging",
-      "Visitor badge printing",
-      "Phone call log",
-      "Postal/dispatch register",
-      "Complaint submission & tracking",
-      "Resolution workflow",
-    ],
+    features: ["Visitor log", "Complaints", "Call log", "Dispatch register"],
   },
   {
     number: 16,
     title: "Polls & Surveys",
     icon: "📊",
-    features: [
-      "Custom poll/survey creation",
-      "Target audience selection",
-      "Anonymous or identified responses",
-      "Results analytics & charts",
-      "Export responses to Excel",
-    ],
+    features: ["Custom surveys", "Analytics", "Export results", "Anonymous options"],
   },
   {
     number: 17,
-    title: "Study Materials & E-Learning",
+    title: "E-Learning",
     icon: "💻",
-    features: [
-      "Upload notes, videos, PDFs",
-      "Subject/chapter organization",
-      "Assignment creation",
-      "Online submission by students",
-      "Grading & feedback",
-      "Zoom/Google Meet integration",
-    ],
+    features: ["Study materials", "Assignments", "Online classes", "Video integration"],
   },
   {
     number: 18,
-    title: "Alumni Management",
+    title: "Alumni",
     icon: "🎓",
-    features: [
-      "Alumni directory",
-      "Profile updates by alumni",
-      "Event invitations",
-      "Alumni networking features",
-      "Donation/contribution tracking",
-    ],
+    features: ["Alumni directory", "Events", "Networking", "Donations"],
   },
   {
     number: 19,
-    title: "Behavioural Records",
+    title: "Behaviour Records",
     icon: "⭐",
-    features: [
-      "Disciplinary incidents logging",
-      "Warning letters generation",
-      "Counseling session records",
-      "Awards & achievements",
-      "Prefect/leadership roles",
-      "House points system",
-    ],
+    features: ["Discipline log", "Awards", "Counseling", "House points"],
   },
   {
     number: 20,
-    title: "Reports & Analytics",
+    title: "Reports",
     icon: "📈",
-    features: [
-      "Standard reports (students, attendance, fees)",
-      "Custom report builder",
-      "Filter & column selection",
-      "Export to Excel/PDF",
-      "Scheduled report emailing",
-      "Trend analysis & charts",
-    ],
+    features: ["Custom reports", "Export PDF/Excel", "Scheduled emails", "Analytics"],
   },
   {
     number: 21,
-    title: "Settings & Configuration",
+    title: "Settings",
     icon: "⚙️",
-    features: [
-      "School profile & branding",
-      "Academic settings",
-      "User management & roles",
-      "Permission configuration",
-      "SMS/Email gateway setup",
-      "Backup & security settings",
-    ],
+    features: ["School branding", "User roles", "Permissions", "Backup"],
   },
   {
     number: 22,
-    title: "Multi-Portal Access",
+    title: "Multi-Portal",
     icon: "🚪",
-    features: [
-      "Super Admin (SaaS management)",
-      "School Admin (full operations)",
-      "Accountant Portal",
-      "Teacher Portal",
-      "Parent Portal",
-      "Student Portal",
-    ],
+    features: ["Admin Portal", "Teacher Portal", "Parent Portal", "Student Portal"],
   },
   {
     number: 23,
-    title: "SaaS Subscription & Billing",
+    title: "SaaS Billing",
     icon: "💳",
-    features: [
-      "School onboarding wizard",
-      "Subscription plan management",
-      "Per-student pricing model",
-      "Usage tracking",
-      "Invoice generation to schools",
-      "Payment gateway integration",
-    ],
+    features: ["Subscriptions", "Usage tracking", "Invoicing", "Payment gateway"],
   },
 ];
 
-const ModulesSection = () => {
-  return (
-    <div className="bg-white p-16">
-      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">
-        Complete Module Breakdown
-      </h2>
-      <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
-      <p className="text-[hsl(213,20%,45%)] mb-8">
-        23 comprehensive modules covering every aspect of school operations.
-      </p>
+// Split modules into pages (8 per page fits well)
+const page1Modules = modules.slice(0, 8);
+const page2Modules = modules.slice(8, 16);
+const page3Modules = modules.slice(16, 23);
 
-      <div className="grid grid-cols-2 gap-6">
-        {modules.map((module) => (
-          <ModuleCard
-            key={module.number}
-            number={module.number}
-            title={module.title}
-            icon={module.icon}
-            features={module.features}
-            color={module.number % 2 === 0 ? "hsl(173,60%,40%)" : "hsl(213,50%,20%)"}
-          />
+export const ModulesPage1 = () => (
+  <div className="bg-white min-h-[297mm] p-12">
+    <h2 className="text-2xl font-bold text-[hsl(213,50%,20%)] mb-2">
+      Complete Module Breakdown
+    </h2>
+    <div className="w-20 h-1 bg-[hsl(173,60%,45%)] mb-3" />
+    <p className="text-sm text-[hsl(213,20%,45%)] mb-6">
+      23 comprehensive modules covering every aspect of school operations.
+    </p>
+    <div className="grid grid-cols-2 gap-4">
+      {page1Modules.map((module) => (
+        <ModuleCard
+          key={module.number}
+          number={module.number}
+          title={module.title}
+          icon={module.icon}
+          features={module.features}
+          color={module.number % 2 === 0 ? "hsl(173,60%,40%)" : "hsl(213,50%,20%)"}
+        />
+      ))}
+    </div>
+    <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-6">Page 1 of 3 - Modules 1-8</p>
+  </div>
+);
+
+export const ModulesPage2 = () => (
+  <div className="bg-white min-h-[297mm] p-12">
+    <h2 className="text-2xl font-bold text-[hsl(213,50%,20%)] mb-2">
+      Module Breakdown (Continued)
+    </h2>
+    <div className="w-20 h-1 bg-[hsl(173,60%,45%)] mb-6" />
+    <div className="grid grid-cols-2 gap-4">
+      {page2Modules.map((module) => (
+        <ModuleCard
+          key={module.number}
+          number={module.number}
+          title={module.title}
+          icon={module.icon}
+          features={module.features}
+          color={module.number % 2 === 0 ? "hsl(173,60%,40%)" : "hsl(213,50%,20%)"}
+        />
+      ))}
+    </div>
+    <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-6">Page 2 of 3 - Modules 9-16</p>
+  </div>
+);
+
+export const ModulesPage3 = () => (
+  <div className="bg-white min-h-[297mm] p-12">
+    <h2 className="text-2xl font-bold text-[hsl(213,50%,20%)] mb-2">
+      Module Breakdown (Final)
+    </h2>
+    <div className="w-20 h-1 bg-[hsl(173,60%,45%)] mb-6" />
+    <div className="grid grid-cols-2 gap-4">
+      {page3Modules.map((module) => (
+        <ModuleCard
+          key={module.number}
+          number={module.number}
+          title={module.title}
+          icon={module.icon}
+          features={module.features}
+          color={module.number % 2 === 0 ? "hsl(173,60%,40%)" : "hsl(213,50%,20%)"}
+        />
+      ))}
+    </div>
+    
+    {/* Summary */}
+    <div className="mt-8 bg-gradient-to-r from-[hsl(213,50%,20%)] to-[hsl(213,50%,30%)] rounded-xl p-6 text-white">
+      <h3 className="font-bold mb-3">✅ All 23 Modules Included</h3>
+      <div className="grid grid-cols-4 gap-3 text-center text-sm">
+        {[
+          { value: "23", label: "Modules" },
+          { value: "6", label: "Portals" },
+          { value: "M-Pesa", label: "Ready" },
+          { value: "100%", label: "Customizable" },
+        ].map((item) => (
+          <div key={item.label} className="bg-white/10 rounded-lg p-2">
+            <p className="text-lg font-bold text-[hsl(173,60%,55%)]">{item.value}</p>
+            <p className="text-xs opacity-80">{item.label}</p>
+          </div>
         ))}
       </div>
     </div>
-  );
-};
+    <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-6">Page 3 of 3 - Modules 17-23</p>
+  </div>
+);
 
+// Default export for backward compatibility
+const ModulesSection = ModulesPage1;
 export default ModulesSection;

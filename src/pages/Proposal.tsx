@@ -8,12 +8,11 @@ import CoverPage from "@/components/proposal/CoverPage";
 import TableOfContents from "@/components/proposal/TableOfContents";
 import ExecutiveSummary from "@/components/proposal/ExecutiveSummary";
 import UserFlowsSection from "@/components/proposal/UserFlowsSection";
-import ModulesSection from "@/components/proposal/ModulesSection";
+import { ModulesPage1, ModulesPage2, ModulesPage3 } from "@/components/proposal/ModulesSection";
 import PaymentSection from "@/components/proposal/PaymentSection";
 import TechArchitectureSection from "@/components/proposal/TechArchitectureSection";
 import MethodologySection from "@/components/proposal/MethodologySection";
 import TimelineSection from "@/components/proposal/TimelineSection";
-
 import WhyUsSection from "@/components/proposal/WhyUsSection";
 import ContactSection from "@/components/proposal/ContactSection";
 
@@ -48,9 +47,11 @@ const Proposal = () => {
           useCORS: true,
           logging: false,
           backgroundColor: "#ffffff",
+          width: section.scrollWidth,
+          height: section.scrollHeight,
         });
 
-        const imgData = canvas.toDataURL("image/jpeg", 0.95);
+        const imgData = canvas.toDataURL("image/png", 1.0);
         const imgWidth = pdfWidth;
         const imgHeight = (canvas.height * pdfWidth) / canvas.width;
 
@@ -58,7 +59,15 @@ const Proposal = () => {
           pdf.addPage();
         }
 
-        pdf.addImage(imgData, "JPEG", 0, 0, imgWidth, Math.min(imgHeight, pdfHeight));
+        // Scale to fit if needed
+        if (imgHeight > pdfHeight) {
+          const scale = pdfHeight / imgHeight;
+          const scaledWidth = imgWidth * scale;
+          const xOffset = (pdfWidth - scaledWidth) / 2;
+          pdf.addImage(imgData, "PNG", xOffset, 0, scaledWidth, pdfHeight);
+        } else {
+          pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+        }
       }
 
       pdf.save("AKILIMATIC_School_Management_System_Proposal.pdf");
@@ -67,6 +76,13 @@ const Proposal = () => {
     } finally {
       setIsGenerating(false);
     }
+  };
+
+  const pageStyle = {
+    width: "210mm",
+    height: "297mm",
+    overflow: "hidden",
+    backgroundColor: "white",
   };
 
   return (
@@ -116,49 +132,58 @@ const Proposal = () => {
       <div className="pt-24 pb-12">
         <div
           ref={contentRef}
-          className={`max-w-[210mm] mx-auto ${isPreviewMode ? "shadow-2xl" : ""}`}
+          className={`mx-auto ${isPreviewMode ? "shadow-2xl" : ""}`}
+          style={{ width: "210mm" }}
         >
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <CoverPage />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <TableOfContents />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <ExecutiveSummary />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <UserFlowsSection />
           </div>
 
-          <div className="pdf-page">
-            <ModulesSection />
+          <div className="pdf-page" style={pageStyle}>
+            <ModulesPage1 />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
+            <ModulesPage2 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <ModulesPage3 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
             <PaymentSection />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <TechArchitectureSection />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <MethodologySection />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <TimelineSection />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <WhyUsSection />
           </div>
 
-          <div className="pdf-page">
+          <div className="pdf-page" style={pageStyle}>
             <ContactSection />
           </div>
         </div>
