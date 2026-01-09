@@ -41,7 +41,7 @@ const ExecutiveSummary = () => {
             { icon: "📊", title: "Complete Digitization", desc: "From admissions to alumni, every process automated" },
             { icon: "📱", title: "M-Pesa Native", desc: "Built-in M-Pesa integration for seamless fee collection" },
             { icon: "👥", title: "Multi-Portal Access", desc: "Dedicated portals for Admin, Teachers, Parents, Students" },
-            { icon: "🔒", title: "Enterprise Security", desc: "Role-based access control with data isolation" },
+            { icon: "🔒", title: "Enterprise Security", desc: "Bank-grade security with AES-256 encryption" },
             { icon: "⚡", title: "AI-Powered", desc: "Rapid 4-6 week delivery with AI development" },
             { icon: "📈", title: "Scalable SaaS", desc: "From single school to nationwide networks" },
           ].map((item, idx) => (
@@ -63,8 +63,8 @@ const ExecutiveSummary = () => {
             "Tailwind CSS",
             "Supabase (PostgreSQL)",
             "Edge Functions",
-            "M-Pesa API",
-            "Africa's Talking SMS",
+            "M-Pesa Daraja API",
+            "SMSALES Gateway",
             "Cloud Hosting",
           ].map((tech) => (
             <span

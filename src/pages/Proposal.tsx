@@ -10,7 +10,9 @@ import UserFlowsSection from "@/components/proposal/UserFlowsSection";
 import ModulesSection from "@/components/proposal/ModulesSection";
 import PaymentSection from "@/components/proposal/PaymentSection";
 import TechArchitectureSection from "@/components/proposal/TechArchitectureSection";
+import MethodologySection from "@/components/proposal/MethodologySection";
 import TimelineSection from "@/components/proposal/TimelineSection";
+import TestimonialsSection from "@/components/proposal/TestimonialsSection";
 import PricingSection from "@/components/proposal/PricingSection";
 import WhyUsSection from "@/components/proposal/WhyUsSection";
 import ContactSection from "@/components/proposal/ContactSection";
@@ -76,7 +78,7 @@ const Proposal = () => {
             <h1 className="text-xl font-bold text-[hsl(213,50%,20%)]">
               School Management System Proposal
             </h1>
-            <p className="text-sm text-[hsl(213,20%,50%)]">AKILIMATIC AI SOLUTIONS</p>
+            <p className="text-sm text-[hsl(213,20%,50%)]">AKILIMATIC AI SOLUTIONS COMPANY LIMITED</p>
           </div>
 
           <div className="flex items-center gap-4">
@@ -145,7 +147,15 @@ const Proposal = () => {
           </div>
 
           <div className="pdf-page">
+            <MethodologySection />
+          </div>
+
+          <div className="pdf-page">
             <TimelineSection />
+          </div>
+
+          <div className="pdf-page">
+            <TestimonialsSection />
           </div>
 
           <div className="pdf-page">

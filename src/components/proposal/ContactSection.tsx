@@ -46,7 +46,7 @@ const ContactSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-3xl mb-3">📍</div>
             <h4 className="text-white font-bold mb-1">Location</h4>
-            <p className="text-[hsl(173,60%,55%)]">Nairobi, Kenya</p>
+            <p className="text-[hsl(173,60%,55%)]">Mombasa, Kenya</p>
           </div>
         </div>
 

@@ -1,10 +1,12 @@
 const sections = [
   { title: "Executive Summary", page: 3 },
   { title: "User Portal Flow Diagrams", page: 4 },
-  { title: "Complete Module Breakdown", page: 8 },
-  { title: "Payment Integrations", page: 16 },
-  { title: "Technical Architecture", page: 17 },
-  { title: "Implementation Timeline", page: 18 },
+  { title: "Complete Module Breakdown (23 Modules)", page: 6 },
+  { title: "Payment Integrations (M-Pesa & Bank)", page: 14 },
+  { title: "Technical Architecture", page: 15 },
+  { title: "Development Methodology", page: 16 },
+  { title: "Implementation Timeline (4-6 Weeks)", page: 17 },
+  { title: "Client Success & Testimonials", page: 18 },
   { title: "Pricing & Subscription Model", page: 19 },
   { title: "Why AKILIMATIC AI SOLUTIONS", page: 20 },
   { title: "Contact & Next Steps", page: 21 },
@@ -38,8 +40,26 @@ const TableOfContents = () => {
         ))}
       </div>
 
+      {/* Quick Highlights */}
+      <div className="mt-8 bg-gradient-to-r from-[hsl(213,50%,20%)] to-[hsl(213,50%,30%)] rounded-xl p-6 text-white">
+        <h3 className="font-bold mb-4">📌 Proposal Highlights</h3>
+        <div className="grid grid-cols-4 gap-4 text-center">
+          {[
+            { value: "23+", label: "Modules" },
+            { value: "4-6", label: "Weeks" },
+            { value: "6", label: "Portals" },
+            { value: "M-Pesa", label: "Ready" },
+          ].map((item) => (
+            <div key={item.label} className="bg-white/10 rounded-lg p-3">
+              <p className="text-2xl font-bold text-[hsl(173,60%,55%)]">{item.value}</p>
+              <p className="text-sm opacity-80">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="mt-auto pt-8 text-center text-sm text-[hsl(213,20%,50%)]">
-        AKILIMATIC AI SOLUTIONS COMPANY • Confidential Proposal
+        AKILIMATIC AI SOLUTIONS COMPANY LIMITED • Mombasa, Kenya • Confidential Proposal
       </div>
     </div>
   );
