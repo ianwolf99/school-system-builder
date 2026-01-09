@@ -1,25 +1,21 @@
-const TechArchitectureSection = () => {
-  const techStack = [
-    { category: "Frontend", items: ["React 18", "TypeScript", "Tailwind CSS", "Vite", "PWA"] },
-    { category: "Backend", items: ["Supabase", "PostgreSQL", "Edge Functions", "Row Level Security"] },
-    { category: "Authentication", items: ["Supabase Auth", "RBAC", "JWT Tokens", "SSO Ready"] },
-    { category: "Storage", items: ["Supabase Storage", "CDN", "Image Optimization", "Document Vault"] },
-    { category: "Payments", items: ["M-Pesa Daraja API", "Bank Integration", "Webhooks", "Auto-Reconciliation"] },
-    { category: "Communication", items: ["SMSALES API", "Bulk SMS", "Email SMTP", "Push Notifications"] },
-  ];
+const techStack = [
+  { category: "Frontend", items: ["React 18", "TypeScript", "Tailwind CSS", "Vite", "PWA"] },
+  { category: "Backend", items: ["Supabase", "PostgreSQL", "Edge Functions", "Row Level Security"] },
+  { category: "Authentication", items: ["Supabase Auth", "RBAC", "JWT Tokens", "SSO Ready"] },
+  { category: "Storage", items: ["Supabase Storage", "CDN", "Image Optimization", "Document Vault"] },
+  { category: "Payments", items: ["M-Pesa Daraja API", "Bank Integration", "Webhooks", "Auto-Reconciliation"] },
+  { category: "Communication", items: ["SMSALES API", "Bulk SMS", "Email SMTP", "Push Notifications"] },
+];
 
+export const TechArchitecturePage1 = () => {
   return (
     <div className="bg-white min-h-[297mm] p-16">
-      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">
-        Technical Architecture
-      </h2>
+      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">Technical Architecture</h2>
       <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
-      <p className="text-[hsl(213,20%,45%)] mb-8">
-        Enterprise-grade architecture built on industry-leading technologies.
-      </p>
+      <p className="text-[hsl(213,20%,45%)] mb-8">Enterprise-grade architecture built on industry-leading technologies.</p>
 
       {/* Architecture Diagram */}
-      <div className="bg-[hsl(210,40%,98%)] rounded-xl p-8 mb-10">
+      <div className="bg-[hsl(210,40%,98%)] rounded-xl p-8">
         <div className="grid grid-cols-3 gap-4">
           {/* Client Layer */}
           <div className="col-span-3 bg-[hsl(213,50%,20%)] text-white rounded-xl p-6 text-center">
@@ -62,13 +58,28 @@ const TechArchitectureSection = () => {
           {/* External Services */}
           <div className="col-span-3 grid grid-cols-3 gap-4">
             {["M-Pesa Daraja", "SMSALES Gateway", "Email SMTP"].map((service) => (
-              <div key={service} className="bg-white border border-[hsl(213,50%,85%)] rounded-xl p-3 text-center">
+              <div
+                key={service}
+                className="bg-white border border-[hsl(213,50%,85%)] rounded-xl p-3 text-center"
+              >
                 <p className="text-sm font-medium text-[hsl(213,50%,30%)]">{service}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-8">Page 1 of 2</p>
+    </div>
+  );
+};
+
+export const TechArchitecturePage2 = () => {
+  return (
+    <div className="bg-white min-h-[297mm] p-16">
+      <h2 className="text-3xl font-bold text-[hsl(213,50%,20%)] mb-2">Technical Architecture (Continued)</h2>
+      <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
+      <p className="text-[hsl(213,20%,45%)] mb-8">Technology stack and security posture.</p>
 
       {/* Tech Stack Grid */}
       <div className="grid grid-cols-3 gap-6">
@@ -110,8 +121,12 @@ const TechArchitectureSection = () => {
           ))}
         </div>
       </div>
+
+      <p className="text-center text-sm text-[hsl(213,20%,50%)] mt-8">Page 2 of 2</p>
     </div>
   );
 };
 
+// Default export kept for compatibility
+const TechArchitectureSection = TechArchitecturePage1;
 export default TechArchitectureSection;
