@@ -88,7 +88,7 @@ const WhyUsSection = () => {
                 ["Expert Problem Solvers", "✓ Yes", "✗ Limited"],
                 ["Custom Modules", "✓ Unlimited", "Extra Cost"],
                 ["Source Code Access", "✓ Full", "✗ Limited"],
-                ["Local Support (Kenya)", "✓ Mombasa", "Overseas"],
+                ["Local Support (Kenya)", "✓ Kenya", "Overseas"],
               ].map(([feature, akilimatic, others], idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[hsl(210,40%,98%)]"}>
                   <td className="p-3 font-medium text-[hsl(213,50%,25%)]">{feature}</td>
@@ -111,13 +111,13 @@ const WhyUsSection = () => {
           />
           <div>
             <h3 className="text-2xl font-bold">AKILIMATIC AI SOLUTIONS</h3>
-            <p className="opacity-80">COMPANY LIMITED • Mombasa, Kenya</p>
+            <p className="opacity-80">COMPANY LIMITED • Kenya</p>
           </div>
         </div>
 
         <p className="text-lg leading-relaxed opacity-90 mb-6">
           AKILIMATIC AI SOLUTIONS COMPANY LIMITED is a leading Kenyan technology company 
-          headquartered in Mombasa, specializing in enterprise software solutions. 
+          specializing in enterprise software solutions. 
           We combine a highly experienced team of problem solvers with deep local market understanding 
           to build world-class systems that work for Africa.
         </p>

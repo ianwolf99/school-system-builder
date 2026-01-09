@@ -6,9 +6,8 @@ const sections = [
   { title: "Technical Architecture", page: 15 },
   { title: "Development Methodology", page: 16 },
   { title: "Implementation Timeline (4-6 Weeks)", page: 17 },
-  { title: "Client Success & Testimonials", page: 18 },
-  { title: "Why AKILIMATIC AI SOLUTIONS", page: 19 },
-  { title: "Contact & Next Steps", page: 20 },
+  { title: "Why AKILIMATIC AI SOLUTIONS", page: 18 },
+  { title: "Contact & Next Steps", page: 19 },
 ];
 
 const TableOfContents = () => {
@@ -58,7 +57,7 @@ const TableOfContents = () => {
       </div>
 
       <div className="mt-auto pt-8 text-center text-sm text-[hsl(213,20%,50%)]">
-        AKILIMATIC AI SOLUTIONS COMPANY LIMITED • Mombasa, Kenya • Confidential Proposal
+        AKILIMATIC AI SOLUTIONS COMPANY LIMITED • Kenya • Confidential Proposal
       </div>
     </div>
   );

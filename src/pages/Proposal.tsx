@@ -13,7 +13,6 @@ import PaymentSection from "@/components/proposal/PaymentSection";
 import TechArchitectureSection from "@/components/proposal/TechArchitectureSection";
 import MethodologySection from "@/components/proposal/MethodologySection";
 import TimelineSection from "@/components/proposal/TimelineSection";
-import TestimonialsSection from "@/components/proposal/TestimonialsSection";
 
 import WhyUsSection from "@/components/proposal/WhyUsSection";
 import ContactSection from "@/components/proposal/ContactSection";
@@ -153,10 +152,6 @@ const Proposal = () => {
 
           <div className="pdf-page">
             <TimelineSection />
-          </div>
-
-          <div className="pdf-page">
-            <TestimonialsSection />
           </div>
 
           <div className="pdf-page">

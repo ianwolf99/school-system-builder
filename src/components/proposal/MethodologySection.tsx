@@ -14,7 +14,7 @@ const MethodologySection = () => {
     },
     {
       icon: "⚡",
-      title: "AI-Powered Development",
+      title: "Rapid Development",
       duration: "Week 1-4",
       activities: ["Rapid prototyping", "Iterative builds", "Daily deployments", "Continuous testing"],
     },
@@ -39,7 +39,7 @@ const MethodologySection = () => {
       </h2>
       <div className="w-24 h-1 bg-[hsl(173,60%,45%)] mb-4" />
       <p className="text-[hsl(213,20%,45%)] mb-8">
-        AI-accelerated agile development ensuring rapid, high-quality delivery.
+        Agile development methodology ensuring rapid, high-quality delivery.
       </p>
 
       {/* Methodology Flow */}
@@ -67,20 +67,20 @@ const MethodologySection = () => {
         ))}
       </div>
 
-      {/* AI Advantage */}
-      <div className="bg-gradient-to-r from-[hsl(280,60%,50%)] to-[hsl(280,60%,60%)] rounded-xl p-8 text-white mb-10">
+      {/* Speed Advantage */}
+      <div className="bg-gradient-to-r from-[hsl(173,60%,40%)] to-[hsl(173,60%,50%)] rounded-xl p-8 text-white mb-10">
         <div className="flex items-center gap-4 mb-4">
-          <div className="text-4xl">🤖</div>
+          <div className="text-4xl">🚀</div>
           <div>
-            <h3 className="text-xl font-bold">AI-Accelerated Development</h3>
+            <h3 className="text-xl font-bold">Rapid Development Process</h3>
             <p className="opacity-90">What takes others months, we deliver in weeks</p>
           </div>
         </div>
         <div className="grid grid-cols-4 gap-4">
           {[
-            { stat: "10x", label: "Faster Coding" },
-            { stat: "80%", label: "Less Bugs" },
-            { stat: "24/7", label: "Development" },
+            { stat: "4-6", label: "Weeks Delivery" },
+            { stat: "100%", label: "Success Rate" },
+            { stat: "24/7", label: "Support" },
             { stat: "∞", label: "Iterations" },
           ].map((item) => (
             <div key={item.label} className="text-center bg-white/10 rounded-lg p-3">
