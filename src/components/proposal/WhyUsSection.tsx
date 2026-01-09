@@ -10,9 +10,9 @@ const WhyUsSection = () => {
     },
     {
       icon: "⚡",
-      title: "AI-Powered Rapid Development",
+      title: "Highly Experienced Team",
       description:
-        "4-6 week delivery using cutting-edge AI development methodology - faster than any competitor.",
+        "4-6 week delivery powered by our highly experienced team of problem solvers - faster than any competitor.",
     },
     {
       icon: "📱",
@@ -85,7 +85,7 @@ const WhyUsSection = () => {
               {[
                 ["Delivery Time", "4-6 Weeks", "3-6 Months"],
                 ["M-Pesa Native", "✓ Built-in", "✗ Third-party"],
-                ["AI-Powered Development", "✓ Yes", "✗ No"],
+                ["Expert Problem Solvers", "✓ Yes", "✗ Limited"],
                 ["Custom Modules", "✓ Unlimited", "Extra Cost"],
                 ["Source Code Access", "✓ Full", "✗ Limited"],
                 ["Local Support (Kenya)", "✓ Mombasa", "Overseas"],
@@ -117,8 +117,8 @@ const WhyUsSection = () => {
 
         <p className="text-lg leading-relaxed opacity-90 mb-6">
           AKILIMATIC AI SOLUTIONS COMPANY LIMITED is a leading Kenyan technology company 
-          headquartered in Mombasa, specializing in AI-powered enterprise software solutions. 
-          We combine cutting-edge artificial intelligence with deep local market understanding 
+          headquartered in Mombasa, specializing in enterprise software solutions. 
+          We combine a highly experienced team of problem solvers with deep local market understanding 
           to build world-class systems that work for Africa.
         </p>
 

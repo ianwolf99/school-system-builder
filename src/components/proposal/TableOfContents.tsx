@@ -7,9 +7,8 @@ const sections = [
   { title: "Development Methodology", page: 16 },
   { title: "Implementation Timeline (4-6 Weeks)", page: 17 },
   { title: "Client Success & Testimonials", page: 18 },
-  { title: "Pricing & Subscription Model", page: 19 },
-  { title: "Why AKILIMATIC AI SOLUTIONS", page: 20 },
-  { title: "Contact & Next Steps", page: 21 },
+  { title: "Why AKILIMATIC AI SOLUTIONS", page: 19 },
+  { title: "Contact & Next Steps", page: 20 },
 ];
 
 const TableOfContents = () => {
