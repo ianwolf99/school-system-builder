@@ -4,8 +4,8 @@ const TechArchitectureSection = () => {
     { category: "Backend", items: ["Supabase", "PostgreSQL", "Edge Functions", "Row Level Security"] },
     { category: "Authentication", items: ["Supabase Auth", "RBAC", "JWT Tokens", "SSO Ready"] },
     { category: "Storage", items: ["Supabase Storage", "CDN", "Image Optimization", "Document Vault"] },
-    { category: "Payments", items: ["Stripe", "M-Pesa API", "Webhooks", "Reconciliation"] },
-    { category: "Communication", items: ["Africa's Talking", "Twilio", "Email SMTP", "Push Notifications"] },
+    { category: "Payments", items: ["M-Pesa Daraja API", "Bank Integration", "Webhooks", "Auto-Reconciliation"] },
+    { category: "Communication", items: ["Africa's Talking", "SMS Gateway", "Email SMTP", "Push Notifications"] },
   ];
 
   return (
@@ -60,8 +60,8 @@ const TechArchitectureSection = () => {
           </div>
 
           {/* External Services */}
-          <div className="col-span-3 grid grid-cols-4 gap-4">
-            {["M-Pesa", "Stripe", "SMS Gateway", "Email SMTP"].map((service) => (
+          <div className="col-span-3 grid grid-cols-3 gap-4">
+            {["M-Pesa Daraja", "SMS Gateway", "Email SMTP"].map((service) => (
               <div key={service} className="bg-white border border-[hsl(213,50%,85%)] rounded-xl p-3 text-center">
                 <p className="text-sm font-medium text-[hsl(213,50%,30%)]">{service}</p>
               </div>
