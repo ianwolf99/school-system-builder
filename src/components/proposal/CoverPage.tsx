@@ -41,7 +41,7 @@ const CoverPage = () => {
         {/* Subtitle */}
         <p className="text-xl text-white/80 max-w-2xl mx-auto mb-16 leading-relaxed">
           A comprehensive, cloud-based solution enabling educational institutions 
-          across Kenya to digitize their entire operations with modern AI-powered technology.
+          across Kenya to digitize their entire operations with cutting-edge technology.
         </p>
 
         {/* Features Highlights */}

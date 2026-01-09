@@ -1,3 +1,4 @@
+// AKILIMATIC School Management System Proposal Generator
 import { useRef, useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -13,7 +14,7 @@ import TechArchitectureSection from "@/components/proposal/TechArchitectureSecti
 import MethodologySection from "@/components/proposal/MethodologySection";
 import TimelineSection from "@/components/proposal/TimelineSection";
 import TestimonialsSection from "@/components/proposal/TestimonialsSection";
-import PricingSection from "@/components/proposal/PricingSection";
+
 import WhyUsSection from "@/components/proposal/WhyUsSection";
 import ContactSection from "@/components/proposal/ContactSection";
 
@@ -156,10 +157,6 @@ const Proposal = () => {
 
           <div className="pdf-page">
             <TestimonialsSection />
-          </div>
-
-          <div className="pdf-page">
-            <PricingSection />
           </div>
 
           <div className="pdf-page">
