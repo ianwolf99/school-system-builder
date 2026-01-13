@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        sms: {
+          success: "hsl(var(--sms-success))",
+          warning: "hsl(var(--sms-warning))",
+          info: "hsl(var(--sms-info))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
