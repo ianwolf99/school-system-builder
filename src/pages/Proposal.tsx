@@ -9,6 +9,7 @@ import TableOfContents from "@/components/proposal/TableOfContents";
 import ExecutiveSummary from "@/components/proposal/ExecutiveSummary";
 import { UserFlowsPage1, UserFlowsPage2 } from "@/components/proposal/UserFlowsSection";
 import { ModulesPage1, ModulesPage2, ModulesPage3 } from "@/components/proposal/ModulesSection";
+import { DemoScreenshotsPage1, DemoScreenshotsPage2 } from "@/components/proposal/DemoScreenshotsSection";
 import PaymentSection from "@/components/proposal/PaymentSection";
 import { TechArchitecturePage1, TechArchitecturePage2 } from "@/components/proposal/TechArchitectureSection";
 import MethodologySection from "@/components/proposal/MethodologySection";
@@ -165,6 +166,14 @@ const Proposal = () => {
 
           <div className="pdf-page" style={pageStyle}>
             <ModulesPage3 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <DemoScreenshotsPage1 />
+          </div>
+
+          <div className="pdf-page" style={pageStyle}>
+            <DemoScreenshotsPage2 />
           </div>
 
           <div className="pdf-page" style={pageStyle}>

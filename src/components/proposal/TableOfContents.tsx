@@ -2,12 +2,13 @@ const sections = [
   { title: "Executive Summary", page: 3 },
   { title: "User Portal Flow Diagrams", page: 4 },
   { title: "Complete Module Breakdown (23 Modules)", page: 6 },
-  { title: "Payment Integrations (M-Pesa & Bank)", page: 14 },
-  { title: "Technical Architecture", page: 15 },
-  { title: "Development Methodology", page: 16 },
-  { title: "Implementation Timeline (4-6 Weeks)", page: 17 },
-  { title: "Why AKILIMATIC AI SOLUTIONS", page: 18 },
-  { title: "Contact & Next Steps", page: 19 },
+  { title: "System Preview (Demo Screenshots)", page: 9 },
+  { title: "Payment Integrations (M-Pesa & Bank)", page: 11 },
+  { title: "Technical Architecture", page: 12 },
+  { title: "Development Methodology", page: 14 },
+  { title: "Implementation Timeline (4-6 Weeks)", page: 15 },
+  { title: "Why AKILIMATIC AI SOLUTIONS", page: 17 },
+  { title: "Contact & Next Steps", page: 18 },
 ];
 
 const TableOfContents = () => {
